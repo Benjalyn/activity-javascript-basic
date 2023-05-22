@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Name Display</title>
+</head>
+<body>
+<label for ="textinput">Enter your name:</label>
+<input type="text" id="textinput" oninput="displayText()">
+<div id="display"></div>
+
+
+<script>
+function displayText() {
+  let text = document.getElementById("textinput").value;
+  document.getElementById("display").innerHTML = "Hello " + text;
+}
+</script>
+
+</body>
+</html>
+
+  
